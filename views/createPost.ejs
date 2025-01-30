@@ -1,0 +1,23 @@
+<%- include("partials/header.ejs") %> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rephiles</title>
+    <link rel="stylesheet" href="styles/createPostStyle.css">
+</head>
+<body>
+    <div class="BlogArea">
+        <form action="/submit" method="post">
+            <div class="ttxt">Title</div>
+            <input type="text" name="Title" class="titlearea type" ><hr size="2vh" color="orange">
+     
+        <div class="blogplace">
+           <textarea name="content" class="type" id="textcontent" rows="20" cols="50" wrap="soft"></textarea><br>
+            <button type="submit" class="btn">Save</button></div>
+        </form></div>
+</body>
+</html>
+<%- include("partials/footer.ejs") %>

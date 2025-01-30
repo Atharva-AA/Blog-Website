@@ -1,0 +1,12 @@
+.blog{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.blogText{
+    padding: 5% 10% 0% 10%;
+}
+h1{
+    text-align: center;
+}

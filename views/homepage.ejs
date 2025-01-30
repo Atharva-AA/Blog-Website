@@ -1,0 +1,90 @@
+<%- include("partials/header.ejs") %> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rephiles</title>
+    <link rel="stylesheet" href="styles/styleHome.css">
+</head>
+<body>
+    
+            <!-- Hero Section -->
+            <div class="heroSection">
+                <div class="heroText"><h1>REPHILES</h1>
+                 <h4>Onestop Destination for ReadoPhiles, Just like You.Dive into a world of ideas, stories, and insights crafted to spark curiosity and fuel your passion for growth.</h4>
+             <div class="buttons"><button type="button" class="btn btn1" id="btn1">Create Post</button>
+             <button type="button" class="btn btn2" id="btn2">Start Reading</button></div> </div>
+                 <div class="heropic">
+                     <img src="images/reading.jpg" class="heropic" alt="A Book image">
+                 </div>
+              </div>
+             <!-- Homepage -->
+     <div class="blogList blogs" id="blogsection">
+        
+         <div class="blogcard first" id="card1">
+             <div class="imgPoster">
+                 <img src="images/saree.jpg" class="blogLogo"alt="">
+             </div>
+             <div class="posterText">
+                 <p><strong>Title:</strong> Traditional Wears</p>
+                 <p><strong>Author:</strong> <span class="authorName">Atharva Achirnekar</span></p>
+                 <p><strong>Description:</strong> The Timeless Charm of Traditional Wears Across Cultures</p>
+             </div></div>
+             
+         <div class="blogcard second"id="card2"><div class="imgPoster">
+             <img src="images/dietHealthy.jpg" class="blogLogo"alt="">
+         </div>
+         <div class="posterText">
+             <p><strong>Title:</strong> Health Care</p>
+             <p><strong>Author:</strong> <span class="authorName">Atharva Achirnekar</span></p>
+             <p><strong>Description:</strong> Transforming Healthcare: Innovations for a Healthier Tomorrow</p>
+         </div></div>
+         
+         <div class="blogcard third" id="card3"><div class="imgPoster">
+                 <img src="images/Ai.jpg" class="blogLogo"alt="">
+             </div>
+             <div class="posterText">
+                 <p><strong>Title:</strong> Future Blog</p>
+                 <p><strong>Author:</strong> <span class="authorName">Atharva Achirnekar</span></p>
+                 <p><strong>Description:</strong> The Future of Technology: Innovations That Will Shape Tomorrow</p>
+             </div></div>
+             
+         <div class="blogcard fourth <%= tempclass %> " id="card4"><div class="imgPoster">
+                 <img src="images/uimage.png" class="blogLogo"alt="">
+             </div>
+             <div class="posterText">
+                 <p><strong>Title:</strong> <%= title %></p>
+                 <p><strong>Author:</strong> <span class="authorName">Unkown</span></p>
+                 <p><strong>Description:</strong> </p>
+             </div></div>
+     </div>
+     <script>
+        document.getElementById("btn1").addEventListener("click",function(){
+            var url="/writeBlog";
+            window.location.href = url;
+        })
+        document.getElementById("btn2").addEventListener("click",function(){
+            var url="#blogsection";
+            window.location.href = url;
+        })
+        document.getElementById("card1").addEventListener("click",function(){
+            var url="/blog1";
+            window.location.href = url;
+        })
+        document.getElementById("card2").addEventListener("click",function(){
+            var url="/blog2";
+            window.location.href = url;
+        })
+        document.getElementById("card3").addEventListener("click",function(){
+            var url="/blog3";
+            window.location.href = url;
+        })
+        document.getElementById("card4").addEventListener("click",function(){
+            var url="/blog4";
+            window.location.href = url;
+        })
+     </script>
+</body>
+</html>
+<%- include("partials/footer.ejs") %>

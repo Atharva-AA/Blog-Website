@@ -1,0 +1,24 @@
+<%- include("partials/header.ejs") %> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rephiles</title>
+    <link rel="stylesheet" href="styles/newblog.css">
+</head>
+<body>
+    <div class="blog">
+        <div class="blogTitle">
+            <form action="/edit" method="post">
+        <h1><input type="text" name="Title" placeholder="<%=blogtitle%>" class="titlearea type" ></h1></div>
+        <div class="blogText">
+            
+            <textarea name="blogarea" id="blogContentArea" wrap="hard"><%=blogtext%></textarea>
+                <button type="submit" class="btn">Save</button></form>
+        </div>
+    </div>
+</body>
+</html>
+<%- include("partials/footer.ejs") %>

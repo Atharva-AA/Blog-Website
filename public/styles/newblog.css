@@ -1,0 +1,52 @@
+.blog{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.blogText{
+    padding: 5% 10% 0% 10%;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+textarea{
+    resize:none;
+    height: 41em;
+    width: 63em;
+    border:none;
+}
+.btn{
+    height: 2.5rem;
+    width: 7.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    border-radius: 3rem;
+    background: #FF7F3E;
+    color: white;
+    border: none;
+    margin-top: 1rem;
+    text-align: center;
+}
+    
+.btn:hover{
+    background: #ff7e3ea0;
+}
+input{
+    font-size: 3rem;
+    border:none;
+}
+input::placeholder{
+    color:black;
+    opacity: 1;
+}
+@media only screen and (max-width: 600px){
+    textarea{
+        width: 21em;
+    }
+    input{
+        font-size:1rem;
+    }
+}
+

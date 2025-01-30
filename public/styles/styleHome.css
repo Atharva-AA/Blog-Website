@@ -1,0 +1,122 @@
+*{
+    scroll-behavior: smooth;
+}
+/* homepage css */
+.blogList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blogcard{
+    width: 80%;
+    /* height: 15vh; */
+    border: 1px solid #c6c6c6;
+    box-shadow: none;
+    margin: 1rem;
+    display:flex;
+    align-items: center;
+}
+.blogcard:hover{
+    box-shadow: 8px 8px 16px rgba(86, 85, 85, 0.5);
+}
+
+.blogLogo{
+    height: 13vh;
+    padding: 1vh;
+}
+.authorName{
+    color: #515151;
+}
+.posterText{
+    text-align: left;
+}
+.disabled{
+    visibility: hidden;
+}
+
+/* herosection */
+.heroSection{
+    width: 90%;
+    height: 40%;
+    background-color: #FF7F3E;
+    display: flex;
+    margin: 5%;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+.heropic{
+    height: 40vh;
+}
+.heroText{
+    margin: 2%;
+    padding: 1%;
+    color: white;
+    background-color: #583e1236;
+    box-shadow: 2px 1px 3px rgb(137 99 47 / 61%);
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    letter-spacing: 0.5em;
+    text-decoration: underline;
+    text-underline-offset: 1vh;
+}
+h4{
+    font-family: cursive;
+    font-size: large;
+}
+.buttons{
+    display:inline-flex;
+    align-items: center;
+}
+.btn{
+    border: none;
+    height: 3rem;
+    font-size: 18px;
+    width: 10rem;
+    
+    border-radius: 4rem;
+}
+
+.btn1{
+    background: #703b0be0;
+    color: white;
+    margin: 1rem;
+}
+
+.btn1:hover{
+    background:  #583e1203;
+}
+.btn2:hover{
+    background: #703b0be0;
+    color: white;
+}
+#card{
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    .heropic{
+        width: 7rem;
+        height: 11rem;
+    }
+    h1{
+        font-size: small;
+    }
+    h4{
+        font-size: xx-small;
+    }
+    .btn{
+        height: 2rem;
+        font-size: 1.5vh;
+        width: 5rem;
+    }
+    .posterText{
+        font-size: x-small;
+    }
+  }
