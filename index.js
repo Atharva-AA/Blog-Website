@@ -83,6 +83,6 @@ app.post("/edit",(res,req)=>{
   });
 })
   
-app.listen(port,()=>{
+app.listen(process.env.port||port,()=>{
     console.log(`Port is listening at Server ${port}`);
 })
